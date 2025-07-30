@@ -10,6 +10,6 @@ if(orderId != null){
     localStorage.removeItem('cart');
 }else{
     alert("Votre commande n'a pas été confirmée !");
-    window.location.assign(`http://live-demo.portelas.fr/kanap/front/html/cart.html`);
+    window.location.assign(`https://live-demo.portelas.fr/kanap/front/html/cart.html`);
 }
 

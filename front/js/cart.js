@@ -60,7 +60,7 @@ function getProductCart(){
 function getProduct(productId, productCartColor, productCartQuantity){
 
     // on recupère les informations du produit dans l'api via son Id
-    fetch(`http://live-demo.portelas.fr:4000/api/products/${productId}`)
+    fetch(`https://live-demo.portelas.fr:4000/api/products/${productId}`)
         .then(data => data.json())
         .then(jsonDetailProduct => { showProduct(jsonDetailProduct, productCartColor, productCartQuantity) })
         .catch(error => console.log("Oh no", error));

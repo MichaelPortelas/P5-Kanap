@@ -8,7 +8,7 @@ getAllProducts();
 
 // Fonction qui recupère tous les produits depuis l'API
 function getAllProducts(){
-    fetch("http://live-demo.portelas.fr:4000/api/products")
+    fetch("https://live-demo.portelas.fr:4000/api/products")
     .then(data => data.json())
     .then(jsonListProduct => { showProducts(jsonListProduct) })
     .catch(error => console.log("Oh no", error));

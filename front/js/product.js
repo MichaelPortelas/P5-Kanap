@@ -9,7 +9,7 @@ getProduct(productId);
 
 // Fonction qui recupère le produit par son ID depuis l'API
 function getProduct(productId){
-    fetch(`http://live-demo.portelas.fr:4000/api/products/${productId}`)
+    fetch(`https://live-demo.portelas.fr:4000/api/products/${productId}`)
     .then(data => data.json())
     .then(jsonDetailProduct => { showProduct(jsonDetailProduct) })
     .catch(error => console.log("Oh no", error));
